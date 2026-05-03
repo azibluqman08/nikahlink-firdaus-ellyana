@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fffaf5;
+  color: #3d2f2f;
+  line-height: 1.7;
+}
+
+/* HERO */
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(
+      rgba(60, 35, 25, 0.55),
+      rgba(60, 35, 25, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=1200&q=80");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+.hero-content {
+  max-width: 650px;
+  animation: fadeIn 1.5s ease;
+}
+
+.small-text {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.hero h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 5rem;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.date {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.intro {
+  max-width: 520px;
+  margin: 0 auto 30px;
+  font-size: 1rem;
+}
+
+/* GENERAL SECTION */
+.section {
+  padding: 70px 20px;
+  text-align: center;
+  max-width: 950px;
+  margin: auto;
+}
+
+.section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #8a5a44;
+}
+
+.text {
+  max-width: 700px;
+  margin: auto;
+  font-size: 1rem;
+}
+
+.bismillah {
+  font-size: 1.7rem;
+  margin-bottom: 20px;
+  color: #9b6b4f;
+}
+
+/* BUTTON */
+.main-btn,
+.second-btn {
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: 0.3s ease;
+  font-weight: 500;
+}
+
+.main-btn {
+  background: #b77b5b;
+  color: white;
+  padding: 13px 30px;
+}
+
+.main-btn:hover {
+  background: #8a5a44;
+  transform: translateY(-3px);
+}
+
+.second-btn {
+  border: 1px solid #b77b5b;
+  color: #8a5a44;
+  padding: 12px 25px;
+  margin: 8px;
+  background: white;
+}
+
+.second-btn:hover {
+  background: #b77b5b;
+  color: white;
+}
+
+/* COUPLE */
+.couple-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.person {
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  width: 280px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.person h3 {
+  font-family: "Playfair Display", serif;
+  color: #8a5a44;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.and {
+  font-family: "Great Vibes", cursive;
+  font-size: 4rem;
+  color: #b77b5b;
+}
+
+/* COUNTDOWN */
+.countdown-section {
+  background: #f7eadf;
+  max-width: 100%;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.countdown div {
+  background: white;
+  width: 120px;
+  padding: 25px 10px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+}
+
+.countdown span {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #8a5a44;
+}
+
+.countdown p {
+  font-size: 0.9rem;
+}
+
+/* DETAILS */
+.details-section .card {
+  background: white;
+  margin: 15px auto;
+  padding: 25px;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.07);
+}
+
+.card h3 {
+  color: #8a5a44;
+  margin-bottom: 8px;
+}
+
+/* TIMELINE */
+.timeline {
+  max-width: 600px;
+  margin: 30px auto 0;
+}
+
+.timeline-item {
+  background: white;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-left: 5px solid #b77b5b;
+  border-radius: 15px;
+  text-align: left;
+  box-shadow: 0 7px 16px rgba(0, 0, 0, 0.06);
+}
+
+.timeline-item span {
+  font-weight: 600;
+  color: #8a5a44;
+}
+
+/* GALLERY */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.gallery-item {
+  height: 220px;
+  background: #e9d5c5;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8a5a44;
+  font-weight: 500;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #7b6a61;
+}
+
+/* RSVP */
+.rsvp-section {
+  background: #f7eadf;
+  max-width: 100%;
+}
+
+/* FOOTER */
+footer {
+  background: #3d2f2f;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer small {
+  color: #d9b8a0;
+}
+
+/* ANIMATION */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* RESPONSIVE PHONE */
+@media (max-width: 768px) {
+  .couple-box {
+  flex-direction: column;
+  gap: 20px;
+}
+
+.and {
+  font-size: 3rem;
+  margin: -5px 0;
+}
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .date {
+    font-size: 1.1rem;
+  }
+
+  .section {
+    padding: 55px 18px;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .countdown div {
+    width: 90px;
+    padding: 20px 8px;
+  }
+
+  .countdown span {
+    font-size: 1.6rem;
+  }
+}
+.music-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  background: #b77b5b;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  white-space: nowrap;
+}
+
+.music-btn:hover {
+  background: #8a5a44;
+}
+
+.form-box {
+  max-width: 700px;
+  margin: 30px auto 0;
+  background: white;
+  padding: 15px;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.form-box iframe {
+  border-radius: 15px;
+}
+.welcome-screen {
+  position: fixed;
+  inset: 0;
+  background: #fffaf5;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.welcome-box {
+  background: white;
+  padding: 40px 30px;
+  border-radius: 25px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.welcome-box p {
+  color: #8a5a44;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.welcome-box h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 3.5rem;
+  color: #8a5a44;
+  margin: 15px 0 25px;
+}
+
+#openCardBtn {
+  background: #b77b5b;
+  color: white;
+  border: none;
+  padding: 13px 32px;
+  border-radius: 50px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+body {
+  background: #fff7ec;
+  color: #3a0b16;
+}
+
+.section h2,
+.person h3,
+.card h3,
+.timeline-item span,
+.countdown span,
+.bismillah {
+  color: #6b1023;
+}
+
+.main-btn {
+  background: #8f1d35;
+  color: white;
+}
+
+.main-btn:hover {
+  background: #6b1023;
+}
+
+.second-btn {
+  border: 1px solid #8f1d35;
+  color: #6b1023;
+  background: #fffaf5;
+}
+
+.second-btn:hover {
+  background: #8f1d35;
+  color: white;
+}
+
+.countdown-section,
+.rsvp-section {
+  background: #f8eadc;
+}
+
+.and {
+  color: #8f1d35;
+}
+
+.timeline-item {
+  border-left-color: #8f1d35;
+}
+
+.music-btn,
+#openCardBtn {
+  background: #8f1d35;
+}
+
+.music-btn:hover,
+#openCardBtn:hover {
+  background: #6b1023;
+}
+
+footer {
+  background: #3a0b16;
+}
+
+footer small {
+  color: #f3c9b8;
+}
+
+.welcome-screen {
+  background: #fff7ec;
+}
+
+.welcome-box h1,
+.welcome-box p {
+  color: #6b1023;
+}

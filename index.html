@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Kad Kahwin Digital | Alhalim & Intan</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" 
+    rel="stylesheet"
+  >
+</head>
+<body>
+
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="musicBtn" class="music-btn">▶ Play Music</button>
+
+  <div id="welcomeScreen" class="welcome-screen">
+    <div class="welcome-box">
+      <p>Walimatul Urus</p>
+      <h1>Alhalim & Intan</h1>
+      <button id="openCardBtn">Buka Kad</button>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+      <p class="small-text">Walimatul Urus</p>
+
+      <h1>Alhalim & Intan</h1>
+
+      <p class="date">Sabtu, 23 Januari 2027</p>
+
+      <p class="intro">
+        Dengan penuh kesyukuran, kami menjemput anda ke majlis perkahwinan kami.
+      </p>
+
+      <a href="#details" class="main-btn">Lihat Jemputan</a>
+    </div>
+  </section>
+
+  <!-- BISMILLAH -->
+  <section class="section">
+    <p class="bismillah">بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ</p>
+
+    <h2>Assalamualaikum W.B.T</h2>
+
+    <p class="text">
+      Dengan izin Allah SWT, kami menjemput Dato’/Datin/Tuan/Puan/Encik/Cik
+      seisi keluarga ke majlis perkahwinan putera dan puteri kami.
+    </p>
+  </section>
+
+  <!-- COUPLE SECTION -->
+  <section class="section couple-section">
+    <h2>Pasangan Mempelai</h2>
+
+    <div class="couple-box">
+      <div class="person">
+<h3>Muhammad Nur Alhalim bin Abu Bakar</h3>
+<p>Putera kepada Ngah binti Ismail</p>
+      </div>
+
+      <div class="and">&</div>
+
+      <div class="person">
+<h3>Intan Balqis Binti Mohd Sukri</h3>
+<p>Puteri kepada Encik Mohd Sukri bin Abu Bakar & Puan Daliawati Binti Sulong</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="section countdown-section">
+    <h2>Menghitung Hari</h2>
+
+    <div class="countdown">
+      <div>
+        <span id="days">00</span>
+        <p>Hari</p>
+      </div>
+
+      <div>
+        <span id="hours">00</span>
+        <p>Jam</p>
+      </div>
+
+      <div>
+        <span id="minutes">00</span>
+        <p>Minit</p>
+      </div>
+
+      <div>
+        <span id="seconds">00</span>
+        <p>Saat</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DETAILS -->
+  <section class="section details-section" id="details">
+    <h2>Butiran Majlis</h2>
+
+    <div class="card">
+      <h3>Tarikh</h3>
+      <p>Sabtu, 23 Januari 2027</p>
+    </div>
+
+    <div class="card">
+      <h3>Masa</h3>
+      <p>11:00 Pagi - 4:00 Petang</p>
+    </div>
+
+    <div class="card">
+      <h3>Tempat</h3>
+      <p>Lot 877, Kampung Gelugor Raja</p>
+    </div>
+
+<div class="button-group">
+  <a 
+    href="https://maps.app.goo.gl/nWXruXyedHi1MGAb9?g_st=ic" 
+    target="_blank" 
+    class="second-btn"
+  >
+    Google Maps
+  </a>
+</div>
+  </section>
+
+<!-- ATURCARA -->
+<section class="section">
+  <h2>Aturcara Majlis</h2>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <span>9:00 AM</span>
+      <p>Ketibaan Pengantin Lelaki</p>
+    </div>
+
+    <div class="timeline-item">
+      <span>9:30 AM</span>
+      <p>Akad Nikah</p>
+    </div>
+
+    <div class="timeline-item">
+      <span>10:00 AM - 11:00 AM</span>
+      <p>Sesi Bergambar</p>
+    </div>
+
+    <div class="timeline-item">
+      <span>12:30 PM</span>
+      <p>Ketibaan Pengantin Bersanding</p>
+    </div>
+
+    <div class="timeline-item">
+      <span>4:00 PM</span>
+      <p>Majlis Bersurai</p>
+    </div>
+  </div>
+</section>
+
+<!-- RSVP -->
+<section class="section rsvp-section">
+  <h2>RSVP Kehadiran</h2>
+
+  <p class="text">
+    Sila tekan butang di bawah untuk mengesahkan kehadiran anda.
+  </p>
+
+  <a 
+    href="https://docs.google.com/forms/d/e/1FAIpQLSdVSdOErV0HmvPcF6YiAfhEs4KWKSKC3d-jR3LkDyeZtGXOgA/viewform?usp=header"
+    target="_blank" 
+    class="main-btn"
+  >
+    Isi RSVP
+  </a>
+</section>
+<!-- CONTACT -->
+<section class="section contact-section">
+  <h2>Hubungi</h2>
+
+  <p class="text">
+    Jika ada sebarang pertanyaan, boleh hubungi nombor di bawah.
+  </p>
+
+  <div class="button-group">
+    <a 
+      href="https://wa.me/60139743321" 
+      target="_blank" 
+      class="second-btn"
+    >
+      WhatsApp Ibu Pengantin Perempuan
+    </a>
+
+    <a 
+      href="https://wa.me/60108170072" 
+      target="_blank" 
+      class="second-btn"
+    >
+      WhatsApp Amir
+    </a>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>Terima kasih atas doa dan kehadiran anda.</p>
+    <small>Made by NikahLink</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
